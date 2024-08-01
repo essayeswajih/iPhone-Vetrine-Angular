@@ -1,0 +1,33 @@
+
+<div class="body">    
+    <main class="container">
+        <div class="row justify-content-center align-items-center table-responsive">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                @for (item of commmands; track $index) {
+                <tbody>
+                    <tr>
+                        <td>{{item.nomArt}}</td>
+                        <td>${{item.puartArt}}</td>
+                        <td><button class="btn btn-danger" (click)="delete(item.idArt)">Delete</button></td>
+                    </tr>
+                </tbody>
+                }
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>${{Total}}</td>
+                        <td><button (click)="deleteAll()" class="btn btn-danger">Delete All</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+        </div>
+    </main>
+</div>

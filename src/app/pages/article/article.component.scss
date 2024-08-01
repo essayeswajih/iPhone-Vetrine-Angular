@@ -1,0 +1,89 @@
+.page3{
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    background-color: var(--ThirdColor);
+    padding-bottom: 30px;
+    min-height: 78vh;
+    min-width: 100vw;
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.name{
+    font-size: larger;
+    font-weight: bolder;
+}
+.price{
+    font-weight: bold;
+}
+.buy{
+    margin-top: 20px;
+    background-color: var(--MainColor);
+    color: var(--ThirdColor);
+    padding: auto;
+    width:55PX;
+    height: 55PX;
+    border-radius: 100%;
+    box-shadow: 1px 1px 7px var(--MainColor);
+}
+.buy:hover{
+    box-shadow:inset 1px 1px 7px var(--ThirdColor);
+}
+img{
+    height: 40vh;
+    margin-top: 10px;
+    width: auto;
+    margin-bottom: 10px;
+}
+.desc{
+    max-height: 10vh;
+    overflow-y:auto;
+    background-color: #bbbbbb2c;
+    border-radius: 5%;
+}
+.page3 .col-3{
+    min-width: 330px;
+    border: 4px solid var(--MainColor);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-radius: 40px;
+    background-color: var(--SecColor);
+    padding: 20px;
+    padding-bottom: 15PX;
+    box-shadow: 3px 3px 17px var(--MainColor);
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-x: none;
+    max-height: 90vh;
+    
+}
+.hhh{
+    box-shadow: 1px 1px 7px var(--MainColor);
+    margin-top: 0;
+    background-color: var(--MainColor);
+    height: 25px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+.b{
+overflow-y: auto;
+}
+@media screen and (min-width: 1200px) {
+    .desc{
+        max-height: auto;
+    }
+    
+}
+@media screen and (min-width: 1500px) {
+    .desc{
+        max-height: auto;
+    }
+    
+}

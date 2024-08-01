@@ -1,0 +1,86 @@
+nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+    top: 0;
+    background-color: transparent;
+    color: var(--ThirdColor);
+    height: auto;
+    transition-duration: 2s;
+    padding:0px;
+    margin: 0px;
+}
+nav:hover{
+    backdrop-filter: blur(10px);
+    background-color: var(--SecColor); //jkkkjj
+    .navbar {
+        display: block;
+        transition-duration: 2s !important
+    }
+}
+.container-fluid{
+    height: auto;
+}
+a{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.nav-link{
+    color: var(--ThirdColor) !important;
+}
+button{
+    background-color: var(--ThirdColor);
+    color: var(--ThirdColor);
+}
+img{
+    margin-top: 3px;
+    max-height: 35px;
+    max-width: 55px;
+}
+.nav-link.active1 {
+    font-weight: bold;
+    color: white;
+    
+    background-color: var(--MainColor) !important;
+}
+li:hover{
+    //-color: var(--ThirdColor);
+    color: var(--SecColor);
+    text-shadow: 0px 0px 2px var(--ThirdColor);
+    border-bottom: 1px solid var(--ThirdColor);
+    cursor: pointer;
+}
+.navbar-brand.active1:hover img{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-link.active2 {
+    background-color: var(--MainColor);
+    color: var(--SecColor);
+}
+.image{
+    padding: 0;
+    margin: 0;
+    background-color: var(--MainColor);
+}
+.navbar {
+    display: none;
+    transition-duration: 2s !important
+}
+
+.image:hover + .navbar {
+    display: block;
+    transition-duration: 2s !important
+}
+.im{
+    width: fit-content;
+    cursor: pointer;
+}
+ul{
+    transition-duration: 2s !important
+}
+li{
+    margin-left: 7px;
+    transition-duration: 2s !important
+}

@@ -1,0 +1,52 @@
+<main class="container">
+    <div class="delete" (click)="delete()">
+        <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#myModal">Delete</button>
+    </div>    
+    <div class="row justify-content-center align-items-center">
+        <form [formGroup]="articleForm1" class="page3 row justify-content-center align-items-center">
+            <div class="col-3">
+                <div class="row justify-content-center align-items-center">
+                    <div class="hhh col-4"></div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center">
+                        <span class="price">Serial ID:
+                            <input type="text" formControlName="codeArt" class="form-control">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center">
+                        <span class="price">Color:
+                            <input type="color" formControlName="couleurArt"  class="form-control">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center">
+                        <span class="price">image URL:
+                            <input type="text" name="imgArt" formControlName="imgArt" class="form-control">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center b">
+                        <div>
+                            <span class="price">phone Name<input type="text" name="nomArt" formControlName="nomArt" class="form-control"></span></div>
+                        <p class="desc">
+                            <span class="price">
+                                Description: <br>
+                                <textarea name="desArt" id="" class="form-control" formControlName="desArt"></textarea>
+                            </span>
+                        </p>
+                        <div>
+                            <span class="price">Price:<br> <input type="number" name="puartArt" formControlName="puartArt" class="form-control"></span>
+                        </div>
+                        <button (click)="onSubmit()" class="buy btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</main>

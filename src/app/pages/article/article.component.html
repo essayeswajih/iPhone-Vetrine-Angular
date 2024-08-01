@@ -1,0 +1,53 @@
+<main class="container">
+  <div class="row justify-content-center align-items-center">
+    <form [formGroup]="articleForm" class="page3 row justify-content-center align-items-center" (ngSubmit)="onSubmit()">
+      <div class="col-3">
+        <div class="row justify-content-center align-items-center">
+          <div class="hhh col-4"></div>
+        </div>
+        <div class="col-12">
+          <div class="row justify-content-center align-items-center">
+            <span class="price">Serial ID:
+              <input type="text" formControlName="codeArt" class="form-control">
+            </span>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row justify-content-center align-items-center">
+            <span class="price">Color:
+              <input type="color" formControlName="couleurArt" value="#232323" class="form-control">
+            </span>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row justify-content-center align-items-center">
+            <span class="price">image URL:
+              <input type="text" formControlName="imgArt" class="form-control">
+            </span>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row justify-content-center align-items-center b">
+            <div>
+              <span class="price">phone Name:
+                <input type="text" formControlName="nomArt" class="form-control">
+              </span>
+            </div>
+            <p class="desc">
+              <span class="price">
+                Description: <br>
+                <textarea formControlName="desArt" id="" class="form-control"></textarea>
+              </span>
+            </p>
+            <div>
+              <span class="price">Price:<br>
+                <input type="number" formControlName="puartArt" class="form-control">
+              </span>
+            </div>
+            <button type="submit" class="buy btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>

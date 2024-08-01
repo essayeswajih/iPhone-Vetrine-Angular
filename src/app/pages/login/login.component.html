@@ -1,0 +1,26 @@
+<main class="container">
+    <div class="row justify-content-center align-items-center">
+        <form [formGroup]="registerForm" class="page3 row justify-content-center align-items-center">
+            <div class="col-3">
+                <div class="row justify-content-center align-items-center">
+                    <div class="hhh col-4"></div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center b">
+                        <div>
+                            <span class="price">Email: <input type="text" name="emailCl" formControlName="emailCl" class="form-control"></span></div>
+                        <p class="desc">
+                            <span class="price">Password: <input type="password" name="passwordCl" formControlName="passwordCl" class="form-control"></span>
+                            <span class="price">{{message}}</span>
+                        </p>            
+                        <button (click)="onSubmit()" class="buy btn">>></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    

@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+:root{
+    --MainColor : Black;
+    --SecColor : #78787857;
+    --ThirdColor : white;
+
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+router-outlet{
+    background-color: var(--MainColor) !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
